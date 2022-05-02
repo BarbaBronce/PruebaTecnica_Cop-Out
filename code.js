@@ -59,6 +59,14 @@ function updateStatus(selectedTask) {
     if(selectedTask.checked) {
         taskName.classList.add("checked");
         todos[selectedTask.id].status = "completed";
+
+        fetch('https://excuser-orpin.vercel.app/')
+        .then(res => res.json())
+            .then((out) => {
+                alert(out[0].excuse)
+        }).catch(err => console.error(err));
+
+
     } else {
         taskName.classList.remove("checked");
         todos[selectedTask.id].status = "pending";
@@ -104,3 +112,6 @@ taskInput.addEventListener("keyup", e => {
         showTodo(document.querySelector("span.active").id);
     }
 });
+
+
+
