@@ -1,0 +1,64 @@
+/*
+Jorge Criado
+Denia
+Mayo 2022
+*/
+
+/* Simple CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+body{
+    padding: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #353535;
+    background-color: rgb(221, 221, 127);
+}
+h1{
+    margin: 10px 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+/*Forms*/
+
+#container{
+    width: 500px;
+    margin: 0 auto;
+}
+form{
+    padding: 20px;
+    font-family: Helvetica, sans-serif;
+    border: none;
+}
+form fieldset{
+
+    padding: 40px; 
+  
+}
+
+form input, form textarea{
+    display: block;
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialised;
+    text-rendering: optimizeLegibility;
+}
+form label{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+form input[type="text"],form input[type="email"],form textarea{
+    padding: 10px;
+    font-size: 20px;
+    font-family:  Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+form textarea{
+    width: 300px;
+    height: 100px;
+}
